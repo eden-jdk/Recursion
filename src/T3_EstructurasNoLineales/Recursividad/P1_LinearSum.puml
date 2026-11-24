@@ -1,0 +1,19 @@
+@startuml
+class P1_LinearSum {
+  ~ n : int
+  ~ data : int[]
+  ~ reader : FastReader
+  + {static} linearSum(data : int[], n : int) : int
+  + leerDatos() : void
+  + resuelve() : void
+  + {static} main(args : String[]) : void
+}
+class FastReader {
+  ~ b : BufferedReader
+  ~ s : StringTokenizer
+  + FastReader()
+  ~ next() : String
+  ~ nextInt() : int
+}
+P1_LinearSum +-- FastReader
+@enduml
