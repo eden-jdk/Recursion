@@ -12,6 +12,8 @@ class P3_PowerComparison {
 class FastReader {
   ~ b : BufferedReader
   ~ s : StringTokenizer
+
+  
   + FastReader()
   ~ next() : String
   ~ nextInt() : int

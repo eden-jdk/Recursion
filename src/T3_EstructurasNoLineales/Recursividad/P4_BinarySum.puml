@@ -1,0 +1,19 @@
+@startuml
+class P4_BinarySum {
+  ~ n : int
+  ~ data : int[]
+  ~ reader : FastReader
+  + {static} binarySum(data : int[], low : int, high : int) : int
+  + leerDatos() : void
+  + resuelve() : void
+  + {static} main(args : String[]) : void
+}
+class FastReader {
+  ~ b : BufferedReader
+  ~ s : StringTokenizer
+  + FastReader()
+  ~ next() : String
+  ~ nextInt() : int
+}
+P4_BinarySum +-- FastReader
+@enduml
