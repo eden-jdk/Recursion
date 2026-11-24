@@ -1,0 +1,19 @@
+@startuml
+class P5_Fibonacci {
+  ~ n : int
+  ~ reader : FastReader
+  + {static} fibonacciBad(n : int) : long
+  + {static} fibonacciGood(n : int) : long[]
+  + leerDatos() : void
+  + resuelve() : void
+  + {static} main(args : String[]) : void
+}
+class FastReader {
+  ~ b : BufferedReader
+  ~ s : StringTokenizer
+  + FastReader()
+  ~ next() : String
+  ~ nextInt() : int
+}
+P5_Fibonacci +-- FastReader
+@enduml
