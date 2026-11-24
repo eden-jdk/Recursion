@@ -1,0 +1,20 @@
+@startuml
+class P7_MultipleRecursion {
+  ~ k : int
+  ~ m : int
+  ~ universe : List<String>
+  ~ reader : FastReader
+  + {static} puzzleSolve(k : int, s : List<String>, u : List<String>) : void
+  + leerDatos() : void
+  + resuelve() : void
+  + {static} main(args : String[]) : void
+}
+class FastReader {
+  ~ b : BufferedReader
+  ~ s : StringTokenizer
+  + FastReader()
+  ~ next() : String
+  ~ nextInt() : int
+}
+P7_MultipleRecursion +-- FastReader
+@enduml
