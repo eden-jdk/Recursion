@@ -1,0 +1,19 @@
+@startuml
+class P2_ReverseArray {
+  ~ n : int
+  ~ data : int[]
+  ~ reader : FastReader
+  + {static} reverseArray(data : int[], low : int, high : int) : void
+  + leerDatos() : void
+  + resuelve() : void
+  + {static} main(args : String[]) : void
+}
+class FastReader {
+  ~ b : BufferedReader
+  ~ s : StringTokenizer
+  + FastReader()
+  ~ next() : String
+  ~ nextInt() : int
+}
+P2_ReverseArray +-- FastReader
+@enduml
