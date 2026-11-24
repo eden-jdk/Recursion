@@ -1,0 +1,21 @@
+@startuml
+class P3_PowerComparison {
+  ~ x : double
+  ~ n : int
+  ~ reader : FastReader
+  + {static} powerBad(x : double, n : int) : double
+  + {static} powerGood(x : double, n : int) : double
+  + leerDatos() : void
+  + resuelve() : void
+  + {static} main(args : String[]) : void
+}
+class FastReader {
+  ~ b : BufferedReader
+  ~ s : StringTokenizer
+  + FastReader()
+  ~ next() : String
+  ~ nextInt() : int
+  ~ nextDouble() : double
+}
+P3_PowerComparison +-- FastReader
+@enduml
